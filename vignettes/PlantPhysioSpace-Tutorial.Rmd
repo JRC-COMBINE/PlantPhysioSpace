@@ -50,7 +50,7 @@ R -e "devtools::install_local('./PlantPhysioSpace/')"
 ```
 
 ### Usage Instructions
-PlantPhysioSpace can map user's sample inside of a physiological space, calculated prior from a compendium of known samples. Here we demonstrate the power of the method with few examples.
+PlantPhysioSpace can map user samples inside of a physiological space, calculated prior from a compendium of known samples. Here we demonstrate the power of the method with few examples.
 
 #### Example One: GSE106635
 The first dataset we will analyse is <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE106635">
