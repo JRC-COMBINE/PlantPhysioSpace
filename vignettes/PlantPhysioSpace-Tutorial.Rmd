@@ -145,7 +145,7 @@ heatmap.2(x = RESULTS,
           col = colorRampPalette(c(rgb(0,0,1), rgb(1,1,0.9), rgb(1,0,0)))(n = 100),
           margins = c(5,5), cexRow = 0.8, cexCol = 0.6, trace = "none", key.title = NA)
 ```
-```{r echo=FALSE, fig.align="center", fig.height=7, fig.width=7, message=FALSE, warning=FALSE}
+```{r echo=FALSE, fig.align="center", fig.height=7, fig.width=7, message=FALSE, warning=FALSE, dpi=200}
 setwd("/Users/ali/Desktop/PlantPhysioSpace")
 
 require(affy)
