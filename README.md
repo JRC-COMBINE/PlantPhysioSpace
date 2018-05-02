@@ -14,7 +14,7 @@ PlantPhysioSpace is a R package implementation of PhysioSpace (Lenz, Michael, et
 Easiest way to install PlantPhysioSpace is via <a href="https://cran.r-project.org/web/packages/devtools/">Devtools</a>.
 After installing Devtools from cran, you can install PlantPhysioSpace by:
 ```r
-devtools::install_github(repo = "JRC-COMBINE/PlantPhysioSpace")
+devtools::install_github(repo = "JRC-COMBINE/PlantPhysioSpace", build_vignettes = TRUE)
 ```
 
 #### Alternative installation methods (Manual download):
@@ -27,7 +27,7 @@ git clone https://github.com/JRC-COMBINE/PlantPhysioSpace.git
 ```
 Then install the downloaded package using <a href="https://cran.r-project.org/web/packages/devtools/">Devtools</a>:
 ```Shell
-R -e "devtools::install_local('./PlantPhysioSpace/')"
+R -e "devtools::install_local('./PlantPhysioSpace/', build_vignettes = TRUE)"
 ```
 
 ### Usage Instructions
