@@ -145,40 +145,7 @@ heatmap.2(x = RESULTS,
           col = colorRampPalette(c(rgb(0,0,1), rgb(1,1,0.9), rgb(1,0,0)))(n = 100),
           margins = c(5,5), cexRow = 0.8, cexCol = 0.6, trace = "none", key.title = NA)
 ```
-```{r echo=FALSE, fig.align="center", fig.height=3.5, fig.width=3.5, message=FALSE, warning=FALSE, dpi=200}
-setwd("/Users/ali/Desktop/PlantPhysioSpace")
-
-require(affy)
-GSE106635ESet <-
-  justRMA(
-    filenames = list.files(path = "data-raw/ExamplesForVignette/GSE106635/GSE106635_RAW",
-                           full.names = T)
-  )
-
-#Converting AffyID to EntrezID:
-ATH1ChipInfo <- read.delim(file = "data-raw/Arabidopsis/AT-raw/ArabidopsisATH1GenomeArray.txt",
-                           header = T, skip=18)
-GSE106635ESetExp <- exprs(GSE106635ESet)
-rownames(GSE106635ESetExp) <- ATH1ChipInfo$Entrez.Gene[match(x = rownames(GSE106635ESetExp),
-                                                          table = ATH1ChipInfo$Probe.Set.ID)]
-GSE106635ESetExp <- GSE106635ESetExp[rownames(GSE106635ESetExp)!="---",] #Lost 1196 rows in conversion!
-
-#Calculating Fold-Changes:
-GSE106635FC <- GSE106635ESetExp[,5:8] - GSE106635ESetExp[,1:4]
-
-#Writing samples names into colnames:
-colnames(GSE106635FC) <- c("WTrep1","WTrep2","MUTrep1","MUTrep2")
-
-#Main calculation:
-require(PlantPhysioSpace)
-RESULTS <- calculatePhysioMap(InputData = GSE106635FC, Space = AT_Stress_Space)
-
-#Plotting the results:
-require(gplots)
-heatmap.2(x = RESULTS,
-          col = colorRampPalette(c(rgb(0,0,1), rgb(1,1,0.9), rgb(1,0,0)))(n = 100),
-          margins = c(5,5), cexRow = 0.8, cexCol = 0.6, trace = "none", key.title = NA)
-```
+![RESULTS(similarities) Heatmap](RESULTSHeatmap.png "RESULTS Heatmap")
 
 In the output you can clearly see all samples have their highest value on Cold stress dimension.
 
