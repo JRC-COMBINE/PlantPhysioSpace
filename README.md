@@ -31,7 +31,11 @@ R -e "devtools::install_local('./PlantPhysioSpace/')"
 ```
 
 ### Usage Instructions
-PlantPhysioSpace maps user's sample inside of a physiological space, calculated prior from a compendium of known samples.
+PlantPhysioSpace can map user's sample inside of a physiological space, calculated prior from a compendium 
+of known samples. We demonstrated how to use this package in a vignette which you can access via:
+```r
+browseVignettes(package = "PlantPhysioSpace")
+```
 
 ### Troubleshooting
 ### Compatibility
