@@ -5,3 +5,6 @@
 data-raw/*
 .DS_Store
 inst/doc
+vignettes/.build.timestamp
+vignettes/PlantPhysioSpace-Tutorial.R
+vignettes/PlantPhysioSpace-Tutorial.html
