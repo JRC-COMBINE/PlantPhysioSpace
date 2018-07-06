@@ -1,5 +1,5 @@
 <h1> <img src="http://www.combine.rwth-aachen.de/files/cbio/content/partner/PlantPhysiosSpace_Logo3small.png" width=100> PlantPhysioSpace</h1>
-PlantPhysioSpace is a R data package which provides plant stress spaces to be used with the package [PhysioSpaceMethods](https://github.com/JRC-COMBINE/PhysioSpaceMethods) for in depth analysis of plant response to different types of stress.
+PlantPhysioSpace is a R data package which provides plant stress spaces to be used with the package <a href="https://github.com/JRC-COMBINE/PhysioSpaceMethods">PhysioSpaceMethods</a> for in depth analysis of plant response to different types of stress.
 
 #### Table of Contents
 **[Installation Instructions](#installation-instructions)**<br>
