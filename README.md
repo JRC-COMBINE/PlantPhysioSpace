@@ -41,4 +41,4 @@ browseVignettes(package = "PlantPhysioSpace")
 ```
 
 ### Test Environments
-The package was tested with R 3.4 on Windows 10, Mac OS X and Linux (CentOS 7.4).
+The package was tested with R 3.4 on ~~Windows 10~~, Mac OS X and ~~Linux (CentOS 7.4)~~.
