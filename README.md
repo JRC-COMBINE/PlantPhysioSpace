@@ -1,7 +1,5 @@
 <h1> <img src="http://www.combine.rwth-aachen.de/files/cbio/content/partner/PlantPhysiosSpace_Logo3small.png" width=100> PlantPhysioSpace</h1>
-PlantPhysioSpace is a R package implementation of PhysioSpace (Lenz, Michael, et al. "PhysioSpace: relating gene expression experiments from heterogeneous sources using shared physiological processes." PLoS One 8.10 (2013): e77627).
-
-It extracts physiologically relevant signatures from reference data set (usually a compendium of public data sets) by integrating and transforming heterogeneous reference gene expression data into a set of physiology-specific patterns, called PhysioSpace. New experimental data can be mapped to these PhysioSpaces, resulting in ”similarity” scores providing quantitative similarity of new experiment to an a priori compendium. 
+PlantPhysioSpace is a R data package which provides plant stress spaces to be used with the package [PhysioSpaceMethods](https://github.com/JRC-COMBINE/PhysioSpaceMethods) for in depth analysis of plant response to different types of stress.
 
 #### Table of Contents
 **[Installation Instructions](#installation-instructions)**<br>
@@ -10,6 +8,8 @@ It extracts physiologically relevant signatures from reference data set (usually
 **[Test Environments](#test-environments)**<br>
 
 ### Installation Instructions
+It is recommended to install [PhysioSpaceMethods](https://github.com/JRC-COMBINE/PhysioSpaceMethods) before PlantPhysioSpace. More information about how to install PhysioSpaceMethods is provided in https://github.com/JRC-COMBINE/PhysioSpaceMethods.
+
 #### Installing via Devtools (Recommended method):
 Easiest way to install PlantPhysioSpace is via <a href="https://cran.r-project.org/web/packages/devtools/">Devtools</a>.
 After installing Devtools from cran, you can install PlantPhysioSpace by:
