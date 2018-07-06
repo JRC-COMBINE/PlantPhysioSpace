@@ -18,17 +18,15 @@ knitr::opts_chunk$set(
 )
 ```
 
-PlantPhysioSpace is a R package which provides an implementation of PhysioSpace method^[Lenz, Michael, et al. "PhysioSpace: relating gene expression experiments from heterogeneous sources using shared physiological processes." PLoS One 8.10 (2013): e77627] alongside plant stress spaces for in depth analysis of plant response to different types of stress.
+PlantPhysioSpace is a R data package which provides plant stress spaces to be used with the package [PhysioSpaceMethods](https://github.com/JRC-COMBINE/PhysioSpaceMethods) for in depth analysis of plant response to different types of stress.
 
 #### Table of Contents
 **[Installation Instructions](#installation-instructions)**<br>
 **[Usage Instructions](#usage-instructions)**<br>
-**[Troubleshooting](#troubleshooting)**<br>
-**[Compatibility](#compatibility)**<br>
-**[Notes and Miscellaneous](#notes-and-miscellaneous)**<br>
-**[Next Steps, Credits, Feedback, License](#next-steps)**<br>
 
 ### Installation Instructions
+It is recommended to install [PhysioSpaceMethods](https://github.com/JRC-COMBINE/PhysioSpaceMethods) before PlantPhysioSpace. More information about how to install PhysioSpaceMethods is provided in https://github.com/JRC-COMBINE/PhysioSpaceMethods.
+
 #### Installing via Devtools (Recommended method):
 Easiest way to install PlantPhysioSpace is via <a href="https://cran.r-project.org/web/packages/devtools/">Devtools</a>.
 After installing Devtools from cran, you can install PlantPhysioSpace by:
@@ -92,7 +90,7 @@ Ensembl's <a href="https://www.ensembl.org/biomart/">BioMart</a> or <a href="htt
 Here we used the conversion table downloaded directly from affymetrix website:
 ```r
 #Converting AffyID to EntrezID:
-ATH1ChipInfo <- read.delim(file = "ArabidopsisATH1GenomeArray.txt",
+ATH1ChipInfo <- read.delim(file = "data-raw/Arabidopsis/AT-raw/ArabidopsisATH1GenomeArray.txt",
                            header = T, skip=18)
 rownames(GSE106635ESetExp) <- ATH1ChipInfo$Entrez.Gene[match(x = rownames(GSE106635ESetExp),
                                                           table = ATH1ChipInfo$Probe.Set.ID)]
@@ -123,7 +121,8 @@ Now that we prepared the proper input for PlantPhysioSpace, the main calculation
 calculatePhysioMap():
 ```r
 #Main calculation:
-require(PlantPhysioSpace)
+library(PhysioSpaceMethods)
+library(PlantPhysioSpace)
 RESULTS <- calculatePhysioMap(InputData = GSE106635FC, Space = AT_Stress_Space)
 ```
 Note that calculatePhysioMap() has to have at least two inputs: 'InputData' which in our case is the fold change matrix, and
@@ -140,21 +139,14 @@ In our case we had samples under cold stress condition, so we expect to see high
 the AT_Stress_Space:
 ```r
 #Plotting the results:
-require(gplots)
-heatmap.2(x = RESULTS,
-          col = colorRampPalette(c(rgb(0,0,1), rgb(1,1,0.9), rgb(1,0,0)))(n = 100),
-          margins = c(5,5), cexRow = 0.8, cexCol = 0.6, trace = "none", key.title = NA)
+#Plotting the results:
+PhysioHeatmap(PhysioResults = RESULTS, main = "Stress Analysis of GSE106635", SymmetricColoring = T, SpaceClustering = T, Space = AT_Stress_Space)
 ```
 ![RESULTS(similarities) Heatmap](RESULTSHeatmap.png "RESULTS Heatmap")
 
 In the output you can clearly see all samples have their highest value on Cold stress dimension.
+For more information about PhysioHeatmap() check PhysioSpaceMethods package documentation.
 
 #### Example Two: GSE93420
 
 #### Example Three:
-
-### Troubleshooting
-### Compatibility
-### Notes and Miscellaneous
-### Building the Extension Bundles
-### Next Steps, Credits, Feedback, License
