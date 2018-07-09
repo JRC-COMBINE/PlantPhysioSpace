@@ -139,7 +139,6 @@ In our case we had samples under cold stress condition, so we expect to see high
 the AT_Stress_Space:
 ```r
 #Plotting the results:
-#Plotting the results:
 PhysioHeatmap(PhysioResults = RESULTS, main = "Stress Analysis of GSE106635", SymmetricColoring = T, SpaceClustering = T, Space = AT_Stress_Space)
 ```
 ![RESULTS(similarities) Heatmap](RESULTSHeatmap.png "RESULTS Heatmap")
