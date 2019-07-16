@@ -2,7 +2,6 @@
 .Rhistory
 .RData
 .Rbuildignore
-data-raw/*
 .DS_Store
 inst/doc
 vignettes/.build.timestamp
