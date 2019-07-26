@@ -3,7 +3,7 @@
 \docType{data}
 \name{AT_Stress_Space_Detailed}
 \alias{AT_Stress_Space_Detailed}
-\title{Detailed arabidopsis StressSpace Based on ATH1 Chip GEO Data}
+\title{Detailed arabidopsis thaliana StressSpace Based on ATH1 Chip GEO Data}
 \format{A matrix with genes as rows and different physiological dimensions in columns.
 Gene Entrez IDs are stored in rownames and space-dimension names in colnames.}
 \source{
@@ -14,24 +14,30 @@ actual dataset series names listed in 'Details' section.)
 data(AT_Stress_Space_Detailed)
 }
 \description{
-AT_Stress_Space_Detailed spans a 300-dimension physiological space constructed from
-50 different Arabidopsis thaliana stress-response gene expression datasets
-from "Gene Expression Omnibus" (GEO). All datasets are measured by Affymetrix
-Arabidopsis ATH1 Genome Array.
+AT_Stress_Space_Detailed spans a 569-dimension physiological space
+constructed from 50 different Arabidopsis thaliana stress-response
+gene expression datasets from "Gene Expression Omnibus" (GEO).
+All datasets are measured by Affymetrix Arabidopsis ATH1 Genome Array.
 }
 \details{
-Here's the list of datasets used for making this Space: GSE5539, GSE5615,
-GSE5616, GSE5620-5628, GSE5727, GSE6177, GSE6583, GSE7334, GSE7642,
-GSE8787, GSE10643, GSE10670, GSE12029, GSE12619, GSE15577, GSE16474,
-GSE16765, GSE18217, GSE18666, GSE19700, GSE22107, GSE22671, GSE24177,
-GSE26983, GSE26983, GSE27861, GSE35258, GSE40061, GSE41626, GSE44655,
-GSE46107, GSE39236, GSE46205, GSE40998&43724, GSE40998&43724, GSE44922,
-GSE44053, GSE55431, GSE58616, GSE58620 and GSE39384.
+Here's the list of datasets used for making this Space: GSE10643, GSE10670,
+GSE11558, GSE12029, GSE12619, GSE13739, GSE14496, GSE14502, GSE15577,
+GSE16474, GSE16765, GSE17464, GSE17479, GSE18217, GSE18666, GSE19264,
+GSE19271, GSE19273, GSE19520, GSE19700, GSE22107, GSE22671, GSE24177,
+GSE2473, GSE26679, GSE26983, GSE27861, GSE27985, GSE28297, GSE30095,
+GSE30702, GSE34130, GSE35258, GSE35580, GSE38030, GSE39236, GSE39268,
+GSE39384, GSE40061, GSE40354, GSE40998, GSE43724, GSE41626, GSE42007,
+GSE44053, GSE44655, GSE44922, GSE46107, GSE46205, GSE49596, GSE50526,
+GSE52117, GSE5520, GSE5539, GSE55431, GSE55835, GSE55906, GSE55907,
+GSE5615, GSE5616, GSE5617, GSE5620, GSE5621, GSE5622, GSE5623, GSE5624,
+GSE5625, GSE5626, GSE5627, GSE5628, GSE5686, GSE5727, GSE58370,
+GSE58616, GSE58620, GSE60960, GSE61484, GSE61684, GSE6177, GSE6583,
+GSE7631, GSE7641, GSE7642, GSE8787, GSE9719
 
 The difference between AT_Stress_Space and AT_Stress_Space_detailed is that
 in AT_Stress_Space all stressed dimensions with the same stress type are
-averaged to make a universal axis for each stress type, while in
-the space of AT_Stress_Space_detailed, stress responses from different
-datasets havetheir own dedicated dimension.
+summarized to make a universal axis for each stress type, while in
+the space of AT_Stress_Space_detailed stress responses from different
+datasets have their own dedicated dimension.
 }
 \keyword{datasets}
