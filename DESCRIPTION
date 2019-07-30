@@ -1,6 +1,6 @@
 Package: PlantPhysioSpace
 Title: Plant Stress Response Analysis by Mapping into Physiological Spaces
-Version: 0.9.11
+Version: 0.9.13
 Authors@R: person("Ali", "Hadizadeh Esfahani", email = "esfahani@aices.rwth-aachen.de", role = c("aut", "cre"))
 Description: This package uses robust 'Physiological Vectors' in N dimensions spaces made from Big Data, to map user data in order to analysis stress response in plants.
 Depends: R (>= 3.4.2)
