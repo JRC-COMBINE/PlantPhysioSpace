@@ -3,7 +3,7 @@
 \docType{data}
 \name{TA_Stress_Space_Detailed}
 \alias{TA_Stress_Space_Detailed}
-\title{Detailed triticum aestivum StressSpace Based on Affymetrix Wheat Genome Array GEO Data}
+\title{Detailed triticum aestivum Stress Space Based on Affymetrix Wheat Genome Array GEO Data}
 \format{A matrix with genes as rows and different physiological dimensions in columns.
 Gene Entrez IDs are stored in rownames and space-dimension names in colnames.}
 \source{

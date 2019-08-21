@@ -3,7 +3,7 @@
 \docType{data}
 \name{OS_Stress_Space}
 \alias{OS_Stress_Space}
-\title{Oryza sativa StressSpace Based on Affymetrix Rice Genome Array GEO Data}
+\title{Oryza sativa Stress Space Based on Affymetrix Rice Genome Array GEO Data}
 \format{A matrix with genes as rows and different physiological dimensions in columns.
 Gene Entrez IDs are stored in rownames and space-dimension names in colnames.}
 \source{

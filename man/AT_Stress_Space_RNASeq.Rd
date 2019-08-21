@@ -3,7 +3,7 @@
 \docType{data}
 \name{AT_Stress_Space_RNASeq}
 \alias{AT_Stress_Space_RNASeq}
-\title{Arabidopsis thaliana StressSpace Based on RNA-seq SRA Data}
+\title{Arabidopsis thaliana Stress Space Based on RNA-seq SRA Data}
 \format{A matrix with genes as rows and different physiological dimensions in columns.
 Gene Entrez IDs are stored in rownames and space-dimension names in colnames.}
 \source{

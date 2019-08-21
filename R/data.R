@@ -1,4 +1,4 @@
-#' Arabidopsis thaliana StressSpace Based on ATH1 Chip GEO Data
+#' Arabidopsis thaliana Stress Space Based on ATH1 Chip GEO Data
 #'
 #' AT_Stress_Space spans a 22-dimension physiological space constructed from
 #' 85 different Arabidopsis thaliana stress-response gene expression datasets
@@ -33,7 +33,7 @@
 #' actual dataset series names listed in 'Details' section.
 "AT_Stress_Space"
 
-#' Detailed arabidopsis thaliana StressSpace Based on ATH1 Chip GEO Data
+#' Detailed arabidopsis thaliana Stress Space Based on ATH1 Chip GEO Data
 #'
 #' AT_Stress_Space_Detailed spans a 569-dimension physiological space
 #' constructed from 50 different Arabidopsis thaliana stress-response
@@ -68,7 +68,20 @@
 #' actual dataset series names listed in 'Details' section.)
 "AT_Stress_Space_Detailed"
 
-#' Arabidopsis thaliana StressSpace Based on RNA-seq SRA Data
+#' Arabidopsis thaliana Meta-Stress Space Based on ATH1 Chip GEO Data
+#'
+#' Almost identical to AT_Stress_Space, except in this space in place of
+#' normal stress groups, meta stress groups are used. Meta groups are found in the
+#' paper 'under preparation' (email esfahani(at)aices.rwth-aachen.de to get
+#' access to a draft/link).
+#'
+#' @format A matrix with genes as rows and different physiological dimensions in columns.
+#' Gene Entrez IDs are stored in rownames and space-dimension names in colnames.
+#' @docType data
+#' @usage data(AT_Stress_Space_Meta)
+"AT_Stress_Space_Meta"
+
+#' Arabidopsis thaliana Stress Space Based on RNA-seq SRA Data
 #'
 #' AT_Stress_Space_RNASeq spans a 7-dimension physiological space
 #' constructed from 8 different Arabidopsis thaliana stress-response
@@ -94,7 +107,7 @@
 #' actual dataset series names listed in 'Details' section.)
 "AT_Stress_Space_RNASeq"
 
-#' Detailed arabidopsis thaliana StressSpace Based on RNA-seq SRA Data
+#' Detailed arabidopsis thaliana Stress Space Based on RNA-seq SRA Data
 #'
 #' AT_Stress_Space_RNASeq_Detailed spans a 151-dimension physiological space
 #' constructed from 8 different Arabidopsis thaliana stress-response
@@ -120,7 +133,7 @@
 #' actual dataset series names listed in 'Details' section.)
 "AT_Stress_Space_RNASeq_Detailed"
 
-#' Oryza sativa StressSpace Based on Affymetrix Rice Genome Array GEO Data
+#' Oryza sativa Stress Space Based on Affymetrix Rice Genome Array GEO Data
 #'
 #' OS_Stress_Space spans a 4-dimension physiological space
 #' constructed from 8 different Rice stress-response
@@ -145,7 +158,7 @@
 #' actual dataset series names listed in 'Details' section.)
 "OS_Stress_Space"
 
-#' Detailed Oryza sativa StressSpace Based on Affymetrix Rice Genome Array GEO Data
+#' Detailed Oryza sativa Stress Space Based on Affymetrix Rice Genome Array GEO Data
 #'
 #' OS_Stress_Space_Detailed spans a 30-dimension physiological space
 #' constructed from 8 different Rice stress-response
@@ -170,7 +183,7 @@
 #' actual dataset series names listed in 'Details' section.)
 "OS_Stress_Space_Detailed"
 
-#' Glycine max StressSpace Based on Affymetrix Soybean Genome Array GEO Data
+#' Glycine max Stress Space Based on Affymetrix Soybean Genome Array GEO Data
 #'
 #' GM_Stress_Space spans a 6-dimension physiological space
 #' constructed from 11 different Soybean stress-response
@@ -195,7 +208,7 @@
 #' actual dataset series names listed in 'Details' section.)
 "GM_Stress_Space"
 
-#' Detailed glycine max StressSpace Based on Affymetrix Soybean Genome Array GEO Data
+#' Detailed glycine max Stress Space Based on Affymetrix Soybean Genome Array GEO Data
 #'
 #' GM_Stress_Space_Detailed spans a 21-dimension physiological space
 #' constructed from 11 different Soybean stress-response
@@ -220,7 +233,7 @@
 #' actual dataset series names listed in 'Details' section.)
 "GM_Stress_Space_Detailed"
 
-#' Triticum aestivum StressSpace Based on Affymetrix Wheat Genome Array GEO Data
+#' Triticum aestivum Stress Space Based on Affymetrix Wheat Genome Array GEO Data
 #'
 #' TA_Stress_Space spans a 2-dimension physiological space
 #' constructed from 4 different Wheat stress-response
@@ -244,7 +257,7 @@
 #' actual dataset series names listed in 'Details' section.)
 "TA_Stress_Space"
 
-#' Detailed triticum aestivum StressSpace Based on Affymetrix Wheat Genome Array GEO Data
+#' Detailed triticum aestivum Stress Space Based on Affymetrix Wheat Genome Array GEO Data
 #'
 #' TA_Stress_Space_Detailed spans a 28-dimension physiological space
 #' constructed from 4 different Wheat stress-response

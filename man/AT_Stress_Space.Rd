@@ -3,7 +3,7 @@
 \docType{data}
 \name{AT_Stress_Space}
 \alias{AT_Stress_Space}
-\title{Arabidopsis thaliana StressSpace Based on ATH1 Chip GEO Data}
+\title{Arabidopsis thaliana Stress Space Based on ATH1 Chip GEO Data}
 \format{A matrix with genes as rows and different physiological dimensions in columns.
 Gene Entrez IDs are stored in rownames and space-dimension names in colnames.}
 \source{

@@ -3,7 +3,7 @@
 \docType{data}
 \name{GM_Stress_Space}
 \alias{GM_Stress_Space}
-\title{Glycine max StressSpace Based on Affymetrix Soybean Genome Array GEO Data}
+\title{Glycine max Stress Space Based on Affymetrix Soybean Genome Array GEO Data}
 \format{A matrix with genes as rows and different physiological dimensions in columns.
 Gene Entrez IDs are stored in rownames and space-dimension names in colnames.}
 \source{
