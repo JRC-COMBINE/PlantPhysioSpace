@@ -9,3 +9,4 @@ inst/doc
 vignettes/.build.timestamp
 vignettes/PlantPhysioSpace-Tutorial.R
 vignettes/PlantPhysioSpace-Tutorial.html
+data-raw/*

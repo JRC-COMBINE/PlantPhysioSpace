@@ -1,4 +1,12 @@
 <h1> <img src="http://www.combine.rwth-aachen.de/files/cbio/content/partner/PlantPhysiosSpace_Logo3small.png" width=100> PlantPhysioSpace</h1>
+
+## Notice: This repository is missing raw files!
+Due to file size restrictions of GitHub, we moved the full version of package to [a GitLab repository, hosted by RWTH Aachen university](https://git.rwth-aachen.de/jrc-combine/PlantPhysioSpace). 
+
+For accessing raw files and scripts for generating included spaces, use the GitLab version here: https://git.rwth-aachen.de/jrc-combine/PlantPhysioSpace.
+
+
+
 PlantPhysioSpace is a R data package which provides plant stress spaces to be used with the package <a href="https://github.com/JRC-COMBINE/PhysioSpaceMethods">PhysioSpaceMethods</a> for in depth analysis of plant response to different types of stress.
 
 #### Table of Contents
